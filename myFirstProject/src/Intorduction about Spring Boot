@@ -1,0 +1,47 @@
+Lecture-1 to 2
+
+-------What is spring and Spring Boot------------------
+-> Spring Boot ek framework hai jo ki java application ko build karne ke kaam aata hai.
+-> Spring Boot hame tools provide karta hai jiski madat se ham Spring application bana shakte hai java me.
+-> Spring Boot make it easy to create stand-alone, production-grade spring based application
+that you can just run
+-> Sping me hame bahut sare configiratation lhikni padti thi to wo configiratation ko kaam karne
+or aasan bana ne ke liye aaya apna spring boot.
+-> Spring Application ko easily create karne ke liye aaya apna spring boot.
+-> The core spring framework already reduce boilerplate code and provides a lot of helpfull
+features for java application
+-> Spring framework bhi accha tha kyu ki boilerplate reduce kardeta tha and provide karta tha
+helpfull features
+-> However, Spring boot takes this convenience to the next level by focusing  specifically
+on reducing the effort required to setup and configure a spring application.
+-> Spring boot ne wo suvidha de di boilerplate wali and congigiration wali jisse hamara kaam
+or easy ho jata hai kyu hame lhikna nhai padta.
+-> While Spring does simplify many tasks like creating web application , working with database, managing transaction
+and more .
+-> Spring aasan bana deta tha creating web application , working with database, managing transaction or bahut kuch
+->  but setting up a spring project can still involve quite a bite of mannual configuration.
+-> This is where Spring Boot steps in.
+-> Spring boot provide Auto-Configuration Standalone Application.
+-> spring boot hame Auto-Configuration and Standalone Application bana ne ke shakti deta hai agar hame
+ye Application ko deploy karna hai to hame koi tom-cat webserver alag se install karne ki jarrurat nhai hai or
+nahi koi configuration lhik ne ki jarrurat hai kyuki spring boot me tom-cat webserver embedded hai matlab
+phele se hi install aata hai tom-cat server jispe ham apne  jar ko direct server me daal shakte hai bina
+configuration lhike hue.
+
+-> we use the @(SpringBootApplication) annotaion on the main class. this single annotation replaces the
+need for setting up mannual spring application context.
+-> annaotaion ka matlab hai ki ham kuch hint de rhae hai ki wo chiz aisi hai or wo chiz waisi hai
+-> we no longer need to explicitly create an application context using AnnotaionConfigApplication as spring
+boot handles that behind the scenes.
+-> We use SpringApplication.run() to start the application, and Spring Boot takes care of configuring the
+embedded web server and other necessary components.
+-> The @SpringBootApplication annotaion alone brings in a lot of pre-configured features, including
+| automatic component scanning | and | embedded server configuration | which would have required  more steps
+in traditional spring setup.
+-> automatic component scanning iska matlab hai ki Spring or Spring Boot me beans hoti hai beans ka matlab
+class ya object hoti hai kisi bhi code me beans (object) banayie and pura code base uss ek bean (object)
+ko use karlega usse dubara se reinitalize karne ki zarrurat nhai hoti Spring me hame beans batani padti
+thi ki beans kitni hai or kha hai or konsi use karni hai Spring boot me haame ye nahi bata na padta
+@SpringBootApplication ye wala annotaion bata deta hai beans ke bare me.
+-> ApplicaitonContext beans banata hai and hame wapis lake deta hai jha bhi code me jarrurat ho Spring
+me hame yahi shab haat se lhikna padta tha lekin ApplicationContext ke karan easy hogaya.
