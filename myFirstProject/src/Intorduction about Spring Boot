@@ -57,3 +57,49 @@ project ko use bhi kar shakta hai
 video no 7 || understanding file structure ||
 -> .mvn = isme hamari maven wrapper class hoti hai wrapper class use karna hai to ham yaha se kar shakte hai .
 -> .gitIgnore = ye to hamko pata hi hai
+-> help.md = isme documention hoti hai
+-> src me do chiz main and test
+1. main = isme hamare shab core functionallity hogi
+-> java = java me ham code lhikenge .
+-> resources = isme hamari properties hati hai
+2.  test = main ke releated test
+-> static = images and or bhi kuch.
+-> application.properties = isme ham kuch properties lhikenge joki ham apne inside the code use kar shakte hai like
+configuration and mongo db ke related etc.
+-> templates = ye phele use hota tha jab ham html ke pages bhi banate the apne springboot ke andar.
+-> test ke andar jo main me method lhike hue honge or hame unhe test karna hoto ham test kar shakte hai .
+
+--> pom.xml = pom stands for project object model iss file me hamare project ki information hoti hai project kaise build
+hoga konse konse external libraries use hongi isme ye shab bataya jaeyga hamare project ka overall shab kuch isime
+milega
+-> pom me jo plugins uska use hamare package jab ham chalate hai tab aata hai.
+-> <Parent /> iski madat se hamre project me kuch
+required dependencies aajati hai.
+
+
+|| IOC (Inversion Of Control ||
+-> Spring boot me hame object creat kane ki jarrurat nhai hoti kyu ki spring boot hamare
+liye object create kardeta hai isko ham bol hai IOC (Inversion Of Control).
+-> Spring me IOC container hota hai jisme hamare project ke classes padi hui hoti hai
+or jab bhi hame class ki jarurat padti hai to ham IOC jo container hai spring me usse ham
+maang lenge or hame uss particular class ki object bana ni ki jarrurat nhai padti.
+-> IOC container ko achive karte hai Application Context ki madat se
+*** IMP ***
+
+-> IOC container sari classes ko apne andar nhai rhakega wo scan karega apne packages +
+classes and sirf un classes ko rhakega jiske uppar @Component lhika hojise ham annotation
+ khete hai .
+
+
+
+
+2. ApplicationContext
+Ye Spring ka actual implementation/container hai
+Ye IoC concept ko implement karta hai
+
+👉 Isme kya hota hai:
+
+Beans create karta hai
+Dependencies inject karta hai (DI)
+Lifecycle manage karta hai
+Extra features (events, AOP, etc.)
