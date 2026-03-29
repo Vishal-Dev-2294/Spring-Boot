@@ -90,8 +90,10 @@ maang lenge or hame uss particular class ki object bana ni ki jarrurat nhai padt
 classes and sirf un classes ko rhakega jiske uppar @Component lhika hojise ham annotation
  khete hai .
 
-
-
+@Component = jiske uppa rbhi ye lhika ho wo class registerd hojati hai as spring bean
+BEAN ka matlab object hota hai bas. @Component se class bean ban jati hai ioc container me
+bean = object . or jab bhi koi class bean ban jati hai to wo automatically ioc containcer
+me chali jati hai .
 
 2. ApplicationContext
 Ye Spring ka actual implementation/container hai
@@ -103,3 +105,44 @@ Beans create karta hai
 Dependencies inject karta hai (DI)
 Lifecycle manage karta hai
 Extra features (events, AOP, etc.)
+
+|| @SprinbootApplication ||
+-> @SprinbootApplication ye annotation sirf hamare main class ke upar lhika jayega wo bhi ek barr bass
+-> @SprinbootApplication iske main teen kaam hot hai
+1. @Configuration 2. @EnableAutoConfiguration 3. @ComponentScan
+-> SprinbootApplication uppar wali teeno annotaion ka kaam akele kr rhai hai
+
+****** VERY IMP *****************
+
+-> Apna project sirf ek hi base package ko manega or wo hai com.springboot.MyFirstProject or ek base
+class jiska name hai MyFirstApplication
+-> haam jitne bhi component banayenge wo com.springboot.MyFirstProject iss wale pacakge ke andar
+banayenge jisme hamari main class hai kyu ki main me class ke uppar @SprinbootApplication lhika hua
+hai ye annotation sirf main class wale package ke anadar jitni bhi class hai or jiss class ke upar
+@Component lhika hai whai class ko sirf IOC container me dalega agar dusri package ki class ke uppar
+ham @Component lhik de to wo IOC container me nhai jayega kyu ki @SprinbootApplication sirf main package
+ke class ko hi jiske uppar @Component lhika ho usi ko sirf scan karega and IOC container me dalega.
+
+ || @RestController ||
+->  @RestController  ye annotation bhi bean create karta hai same apne @COmponent kasie hi hai bass kuch or bhi
+hai jo hame aage dheknge
+
+|| @GetMapping ||
+-> @GetMapping ye annotation se hame api end point create karte hai bass
+
+|| @Autowired ||
+-> @Autowired ye annotation se Spring Boot se ham object mangte hai kha se IOC container se jiski madat se hamme
+object create karne ki jarrurat nhai hoti .
+
+|| Dependency Injection ||
+
+-> @Autowired iski madat se hamne dog class ko car class me inject kiya and apni car class depend hai dog wali class pe
+isko bolenge dependency and ye hamne jo pura dance kiya usko bolenge ham dependency injection.
+
+2. @EnableAutoConfiguration
+-> ye enable kardeta hai auto configuration ko
+
+1. @Configuration
+-> iske madat se ham @bean bana shakte hai @Configuration ye annotation kisi bhi class ke uppar lhikdo and
+@bean ye annotation sirf function pe lhika jata hai and ye aanotation ki madat se ham koi funciton ko ham bean bana
+shakte hai
