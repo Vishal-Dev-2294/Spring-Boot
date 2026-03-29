@@ -45,3 +45,15 @@ thi ki beans kitni hai or kha hai or konsi use karni hai Spring boot me haame ye
 @SpringBootApplication ye wala annotaion bata deta hai beans ke bare me.
 -> ApplicaitonContext beans banata hai and hame wapis lake deta hai jha bhi code me jarrurat ho Spring
 me hame yahi shab haat se lhikna padta tha lekin ApplicationContext ke karan easy hogaya.
+
+Lecture 3 || Maven ||
+-> Maven build bana ne ke kaam ata hai maven ek build automataion tool hai jo simplify karta hai and dependencies ko
+manage karta hai.
+-> build bana ne ka matlab hai ki compile karna jar bana na war bana na and or bhi kuch .
+-> Maven ke madat se ham external libraires me se bhi dependecy la ke use kar shakte hai and maven usse manage karega .
+-> mvn package ye command se hi hamara jar war shab kuch ban jayega and dusra koi hamare
+project ko use bhi kar shakta hai
+
+video no 7 || understanding file structure ||
+-> .mvn = isme hamari maven wrapper class hoti hai wrapper class use karna hai to ham yaha se kar shakte hai .
+-> .gitIgnore = ye to hamko pata hi hai
