@@ -1,0 +1,26 @@
+----------- video no 9  Creating RestApi -------------------
+** Rest Api
+-> rest (representaional(user or data base) state transfer(inn dono ka matalb hai ki user or
+data base kuch information pass karenge))
+-> api (application programing interface)
+-> Rest Api ka matlab hai ki user ko server(database) se kuch chaiye ye to user ko kuch bhej na hai
+server pe to ham direct server me se kuch bhi bhej ya manga nhai shakte hai bhejne ya
+manga ne ke liye ham use karte hai rest api ka rest api ki madat se user database se mang
+ya bhej shakta hai.
+-> abb shamjo ki user ko netflix ka plain chaiye user ne click ki plain ke uppar ok and
+apna server ka url hai 23232.34.8080 ok and user ne jise hi click kiya plain ke uppar
+to wo 23232.34.8080/netflix/plain iss localhost pe gaya jo apna end point hai plain ka
+matalb ki URL hai sird URL ki madat se user plain ko acces nhai kar payega yaha pe chaiey
+hoga HTTP (hyper text transfer protocol) matlab user ko UR+HTTP chaiye hoga
+** HTTP ke 4 methods hai
+1. GET :- user ka data dhekne ke liye get
+2. PUT :- user ka data modify karne ke liye put hai
+3. POST :- user ka data create karne ke liye post hai
+4. DELETE :- user ka data delete karne ke delete method hai
+
+---> REST API = URL + HTTP Verb
+
+-> Controller control karega rest api ko matlab data lana bhejna and bhot kuch
+-> Controller isime ham apna rest api lhik te hai
+-> Controller ke andar jo hamara HealthCheck wala class hai hame hamesa compulsory lhikna
+hai usko and ek bar post man me bhi dhek lena hia chal rah ahi ya nhai
