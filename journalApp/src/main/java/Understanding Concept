@@ -35,3 +35,15 @@ ko define karte hai like id , title, content etc.
 
 *JournalEntryController
 -> is file me hamne create read update delete perform kiya hai
+
+|| Video 11 Mongo DB basic understanding ||
+
+-> Sql me table hoti hai usme rows and colums hote hai and mongo DB ke andar collections hoti hai usme fields hoti hai
+and rows ko ham bol dete hai documents
+-> hame mongo db me inserOne, deleteOne , and aise hi kuch or operations aani chaiye bass
+-> use testdb // database create karna
+-> db.users.insertOne({name: "Vishal", age: 21}) // database me value insert karna
+-> db.users.find() // database se values ko nikal na
+-> db.users.updateOne({name:"Vishal"}, {$set:{age:22}}) // data base me update karna
+-> db.users.deleteOne({name:"Vishal"}) // database se value delete karna
+-> jo bhi answer aata haiusko aham bolte hai document and name , age ye jo key hai isko bolte hai fileds.
