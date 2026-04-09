@@ -18,7 +18,7 @@ hoga HTTP (hyper text transfer protocol) matlab user ko UR+HTTP chaiye hoga
 3. POST :- user ka data create karne ke liye post hai
 4. DELETE :- user ka data delete karne ke delete method hai
 
----> REST API = URL + HTTP Verb
+---> REST API = URL + HTTP Verb(get, put, post, delete)
 
 -> Controller control karega rest api ko matlab data lana bhejna and bhot kuch
 -> Controller isime ham apna rest api lhik te hai
