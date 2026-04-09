@@ -24,3 +24,14 @@ hoga HTTP (hyper text transfer protocol) matlab user ko UR+HTTP chaiye hoga
 -> Controller isime ham apna rest api lhik te hai
 -> Controller ke andar jo hamara HealthCheck wala class hai hame hamesa compulsory lhikna
 hai usko and ek bar post man me bhi dhek lena hia chal rah ahi ya nhai
+
+** entity
+-> is package ke andar hamra journal entry name ka file hai entity wale package ke andar ham ussaly entries
+ko define karte hai like id , title, content etc.
+
+** Controller
+-> is package me hame shabse phele ek healthcheck bana lene ka ki hama server run horaha hai ya nhai
+-> iss package ke andar ham rest api bana te hai and alag alag end point create karte hai task ke hisab se.
+
+*JournalEntryController
+-> is file me hamne create read update delete perform kiya hai

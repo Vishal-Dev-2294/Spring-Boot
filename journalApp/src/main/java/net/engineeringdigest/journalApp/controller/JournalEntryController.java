@@ -12,14 +12,14 @@ import java.util.Map;
 @RequestMapping("/Journal")
 public class JournalEntryController {
 
-    private Map<Long, JournalEntry> JournalEntries = new HashMap<>();
+    private Map<Long, JournalEntry> JournalEntries = new HashMap<>(); // isme hi hamra id and shabkuch araha hai
 
     @GetMapping
     public List<JournalEntry> getAll(){ // Get pe ya chalega
         return new ArrayList<>(JournalEntries.values());
     }
 
-    @PostMapping()
+    @PostMapping
     public boolean createEntry (@RequestBody JournalEntry myEntry){ // Post pe ye chalega
         JournalEntries.put(myEntry.getId(), myEntry);
         return true;
