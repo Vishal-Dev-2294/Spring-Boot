@@ -46,4 +46,69 @@ and rows ko ham bol dete hai documents
 -> db.users.find() // database se values ko nikal na
 -> db.users.updateOne({name:"Vishal"}, {$set:{age:22}}) // data base me update karna
 -> db.users.deleteOne({name:"Vishal"}) // database se value delete karna
--> jo bhi answer aata haiusko aham bolte hai document and name , age ye jo key hai isko bolte hai fileds.
+-> jo bhi answer aata hai usko aham bolte hai document and name , age ye jo key hai isko bolte hai fileds.
+
+|| Video 12 ORM and JPA and Spring Data Jpa||
+
+*ORM
+->  ORM = Object Relational Maping
+-> ORM is a technique used to map java objects to database tables.
+-> it allows developers to work with database using object-oriented programing concepts , making it easier to
+interact with relational database.
+-> for example :- hamare pass class hai user name ki and database me ek table hai users name agar ham user wale
+class pe operation perform karte hai to orm ki madat se users table me bhi whai operation hojayega.
+-> Consider a java class User and a database table users.
+-> ORM framework like Hibernet can map the fields in the User class to columns in the user table,
+makin it easier to insert, update, retrieve, and delete records.
+-> ORM ki madat se user class ke andar jobhi fields hai wo user table me columns ke andar map hojayengi hame easy kardega
+insert, update, delete, and retrieve karne ko.
+
+*JPA
+-> JPA = Java Persistence API
+-> Persistence = permanently store karna data ko
+-> API = set of rules
+-> JPA set of rules provide karta hai jisse ham ORM achive kar shakte hai.
+-> JPA is a way to achive ORM, includes interfaces and annotations that you use in your Java calsses, requires a
+presistence provider (ORM tools) for implementation.
+-> JPA ek set of rules hai iske annotaion and interface hoti hai apni java class ki ye khud se kuch nhai karegi
+hamko ORM ke tools chaiye honge inko implement karne ke liye.
+*presistence provider (ORM tools)
+-> To use JPA, you need a presistence provider. A presistence provider is a specific implementaion of the JPA
+specification. Examples of JPA persistence providers include Hibernate, EclipseLink, and OpenJPA. These providers
+implement the JPA interfaces and provide the underlying functionality to interact with database.
+-> JPA interface ki kai sari implementaion ho shakti hai jaise ki Hibernate, EclipseLink, and OpenJPA(ORM Tools) ham JPA in teen
+tareeko se use karenge piche wale tareeko se. actual me ham Hibernate, EclipseLink, and OpenJPA ye teen chiz use kar
+rhae honge to interact with relational database
+
+*Spring Data JPA
+-> Spring Data JPA is built on top of the JPA(java presistenace api) specification, but it is not a JPA implementation
+itself. instead, it simplifies working with JPA by providing higher-level abstractions and utilites. however, to use
+Spring Data JPA effectively, you still need a JPA implementation, such as Hibernate, EclipseLink, or another JPA-compliant
+provider, to handle the actual database interactions.
+-> Spring Data JPA ki madat se ham log chizo or chippa shakte hai abstractions ki madat se.
+
+----> JPA is primarily designed for working with relational database, where data is stored in tables with a predefined
+schema. Mongo DB, on the other hand, is a NoSql database that uses a different data model, typically based on collections
+of documents, which are schema-less or have flexible schemas. this fundamental differnce in data models and storage
+structures is why JPA IS NOT USED IN MONFODB.
+-> 🔥 Final ek line me:
+
+   👉 SQL = "pehle schema banao, fir data daalo" // strict rules it is a relational database
+   👉 MongoDB = "pehle data daalo, schema baad me bhi chalega" // freedom or flexible 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
