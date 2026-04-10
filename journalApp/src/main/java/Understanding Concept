@@ -94,11 +94,24 @@ structures is why JPA IS NOT USED IN MONFODB.
 -> 🔥 Final ek line me:
 
    👉 SQL = "pehle schema banao, fir data daalo" // strict rules it is a relational database
-   👉 MongoDB = "pehle data daalo, schema baad me bhi chalega" // freedom or flexible 
+   👉 MongoDB = "pehle data daalo, schema baad me bhi chalega" // freedom or flexible
 
+-> In the case of Mongodb, you dont have tadtional JPA persistence provider. MOngo db is a NOSQL database , and SPRING
+DATA MONGODB  serves as the "persistence provider" for MONGODB,
+-> It Proivedes the necessary abstraction and implementaion to work with MONGODB in a Spring application.
 
+-> ham log database ke shaat khel shakte hai do chizo ki madat se QUERY METHOD DSL and  CRITERIA API in dono
+ki madat se ham database ke shat interact kar shakte hai when using Spring Data JPA for relational database and
+Spring Data Mongodb for mongodb data base.
 
+-> Spring Data JPA is a part of the Spring framework that simplifies data access in java applications, while Spring
+Data Mongodb provides similar functionality for Mongodb.
 
+-> QUERY METHOD DSL isme hame querry lhikni ki jarrurat nhai hai method ka name lhikna hai iss tarah se ki wo
+querry ban jaye bhot easy hai matlab bhot easy
+-> CRITERIA API ye use hota hai complex and custom queries bana ne ke liye ye bhi bhot easy hai matlab bhot easy.
+-> QUERY METHOD DSL and  CRITERIA API ye do chiz aane ke baad database hamare finger tips pe hoga matlab easyli ham
+interact kar payenge database ke shaat.
 
 
 
