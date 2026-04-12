@@ -116,7 +116,33 @@ interact kar payenge database ke shaat.
 || Video 13 Conection mongodb to spring boot ||
 -> step 1 :- add dependcies of monogdb in pom.xml
 -> step 2 :- add configuration in application .properties
-connection completed
+<--------> connection completed <------------->
+-> service wale package me bussiness logic hoga.
+-> Controller sirf endpoint banayega and service ko call karega jo bhi lhikna hai wo ham service ke andar
+lhikenege
+-> service name se package banyenge and usme ek class banayenge JounalEntryService and entry create karna
+update karna , delete karna wo shab kaam ham iss wale package + file me karenge.
+-> iske baad ham ek or repository banyenge usme ek file banayenge interface wali JournalEntryRepository.
+-> controller call karega service ko service call karega repository ko
+-> spring data mongodb ke dwara ek interface provide kiya gya hai jisko bolte hai mongo repository yahi
+db se querry chalaeyga to isse ham JournalEntryRepository wali class me ham extended karenge MongoRepository
+-> ye MongoRepository intergace hame spring data mongodb ne provide kiya hai MongoRepository me hame
+sare crud operation perfom kiya hue miljayenge bass hame usse use karna hai apni file me
+-> bass hame MongoRepository<ham kya dhund rhae hai matlab hamari fields konsi file me padi hai uss
+file name jaise ki JournalEntry , hamari id kis type ki hai bass yaha pe ye dena hai String> finall me kuch
+aisa dhikega MongoRepository<JournalEntry , String> ORM me hamne phada tha maping karna hot hai to
+ham apni JournalEntry wali class me @Document lhikenge ye annotaion spring se bolega ki ye mongodb ke
+collection maped entity hai JournalEntry ke instance apne document ke bara bar hoga matlab ek row ke
+bara bar hoga
+-> @Id ye annotaion ka matlab hai ki hamare collection me ek unique key hai.
+-> MongoRepository<Collection , and uska type jaise ki String> iske uppar ke uppar wale point ke baad
+haam ye wali repository ko use kar shakte hai .
+-> iske baad ham ye wali reposiotry ko hamare service wale me lake inject karenge @Autowierd ki madat se
+jise ham call karna bhi bolte hai whai wali file me ek save name ka method banayenge joki hamra entries ko
+save karega.
+-> @Documeent(collection = "journal_entries") ye collection ham nhai lhik te to wo JournalEntry wale collection
+ko dhundta isiliye hamne ye collection ko lhika hai.
+
 
 
 
