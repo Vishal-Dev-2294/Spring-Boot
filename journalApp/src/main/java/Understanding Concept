@@ -143,8 +143,13 @@ save karega.
 -> @Documeent(collection = "journal_entries") ye collection ham nhai lhik te to wo JournalEntry wale collection
 ko dhundta isiliye hamne ye collection ko lhika hai.
 
+|| Video 14 Response Entity ||
+-> status cokde shamjaya hai bas
 
-
+|| Video 15 Lombok ||
+-> ye ek java ki libraray hai code reduce karne ka kaam karti hai
+-> iski madat se hame getter setter equals or bhi bhaut kuch lhik ne ki jarrurat nhai padti ye compile time pe
+khud hi lhik deta hai
 
 
 
