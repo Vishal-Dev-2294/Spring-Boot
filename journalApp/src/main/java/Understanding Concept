@@ -151,11 +151,20 @@ ko dhundta isiliye hamne ye collection ko lhika hai.
 -> iski madat se hame getter setter equals or bhi bhaut kuch lhik ne ki jarrurat nhai padti ye compile time pe
 khud hi lhik deta hai
 
-|| Video 15 Link two collection ||
+|| Video 16 Link two collection ||
 -> isme hame sirf link kaise karte hai wo bataya gya hai
 -> kuch annotation and code lhik ke hamne link banai hai
 -> @indexin unique user ke liye
 -> @nonNull and or bhi kuch
 
-|| Video 16 @Transactional Annotation ||
-->
+|| Video 17 @Transactional Annotation ||
+-> @Transactional ye annotation method ke uppar lhika jata hai iska matlab hai ki agar uss particular
+method ke andar koi operation fail hota hai to pura method roll back ho jayega matalb ki ek kisi bhi line
+me error aata hai to uske uppar ki line jo success fully run hui wo bhi rollback hojayegi matlab
+wo bhi nhai chalega pure method hi ruk jayega ek line ke error wjaha se'
+-> @Transactional ye annotaion ko use karne ke liye hame @EnableTransactionManagement ye annotion hame
+apne main wali class me lagana padega ye kya karega ye ek container banayega Transactionalcontext ki madat
+se and sare @Transactional wale methods ko container me rhakega.
+-> ye rollback karna and operation ko perform karne ke liye hame ek manager ke jarrurat padti hai
+to ham ek inteface banayenge PlatformTransactionManager extends TransactionManager isko implement karga
+hamra MongoTransactionManager
